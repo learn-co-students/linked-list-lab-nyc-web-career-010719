@@ -79,8 +79,8 @@ describe('#indexAt', function() {
     let lastNode = {name: 'charlie', next: null}
     let linkedList = 'whana'
     let collection = {rkjasj: secondNode, asnan: lastNode, whana: firstNode}
-    expect(indexAt(firstNode, collection, linkedList)).toEqual(0)
-    expect(indexAt(secondNode, collection, linkedList)).toEqual(1)
+    expect(indexAt(firstNode, linkedList, collection)).toEqual(0)
+    expect(indexAt(secondNode, linkedList, collection)).toEqual(1)
   })
 })
 
